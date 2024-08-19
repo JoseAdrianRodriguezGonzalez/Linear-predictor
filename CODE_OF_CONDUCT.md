@@ -8,9 +8,10 @@
 This is the workflow that it is required to look and therefore, always at each point, write it down on your slide to be shown at the day.
 
 First, attack the first csv that must be the easier one with the next procedure.
+
 1. check the headers
 2. Check the basci parameters on statistics as mean, median,frequency, max or min
-3. Recommendably check out a plot 
+3. Recommendably check out a plot
 4. Analyze the categorical data.
 5. Look out if there are data that is useless
 6. It may have seen some outliers, check how to deal with them
