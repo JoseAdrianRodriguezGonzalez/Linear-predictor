@@ -13,9 +13,46 @@
 In data analysis we need to understand that every analysis problems requires its own time before to create a predictive model. This is because we need to verify if our model would it be useful.
 We have two problems to practice that it has been learned about data analysis. As first checkout it'll be a simple dataset that only have two features \(x and y\). So at the first sight seems to be quick but before to create a predictive model, it'll be required to take a look into the data as first step. And also, we got another case about predicte the price of cars.
 \section{Introduction}
+With the objective to checkout how does it work the linear regression and look out for troubles on the real life. It has been presented two datasets. The first one consist in sintetic data.
+And the seconde one is related wth the prices of car, and involves several features and the main wit these datset is create a predictor that may predict future data.
 \section{Related works}
+Some of the related works(by now, I'll just let some of the books and the docoumentation that I could  to see)
 \section{Methods and materials}
+The material used for this analysis were the usage of python and it libraries for data analysis and machine learning:
+\begin{itemize}
+  \item Numpy: For mathematical calculations
+  \item Pandas: For handle datasets 
+  \item scipy: to evaluate statistical parameters
+  \item Scikit-learn: to train our model and check more parameters related with the model chose.  
+\end{itemize}
+The methodology followed it's the mix of scientific methodology with the abstractacion for a data scientist. 
+\begin{itemize}
+  \item Obtain the data
+  \item Make an exploration into the data.
+  \item Check various parameters from the dataset.(These part involves most of the part of exploratory anaylisis, as also, this step gives several hypothesis to check out at the dataset)
+  \item Now that we have our Hypothesis planted, and also, with the help of th last step that it can be plotted the data. Now it'll be cleaned the data, and for this section it incquires in several steps
+  \item \begin{itemize}
+    \item Hypothesis proposal
+    \item Transformations (logarithm, square, box-cox, capping and flooring)
+    \item Check the metrics of skewness, $R^2$, $MSE$,$RMSE$ 
+    \item Make the model of linear regression 
+  \end{itemize}
+  \item check its metrics
+  \item Propouse another hypothesis.
+\end{itemize}
+These were the main steps followed at the work. The part of reading some material and check information from several sources, is mainly the first step before to begin the work. However if there's something missing when the hypothesis are covered and we are finding out in a rabbithole, it'll be useful to look for more sources to create other hypothesis
 \section{Data analysis}
+The first data analysis that has been studied was the dataset with sintetic data. As it had been mentioned, following the scientifical methodology we look for the data and it started with a data exploration.
+It obtained the following values \dots
+\begin{table}[h]
+
+\end{table}
+
+Now that we have assured that the data are completed we can see the value of the mean and the 50 percentile are quited different, mostly on the variable x, it requires to be cleaned the data. Nevertheless, it is useful to check the correlation with variable x to y too.
+The correlation matrix resulted on \dots
+
+The correlation is quite low between x,y.
+And also, something that we can notice with 
 \section{Discussion}
 \section{Conclussions and future work}
 \section{references}

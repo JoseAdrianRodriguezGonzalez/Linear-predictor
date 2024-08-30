@@ -1,7 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1724057908.13202 "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" "article.pdf" "article" 1724057908.7787 0
+["pdflatex"] 1724960227.19722 "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" "article.pdf" "article" 1724960227.87444 0
   "C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717072705 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1719615201 11548 c2506c5ae4e510f22d3f906dd39b91ac ""
   "C:/Users/USUARIO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714391857 24225990 d40def71907e5dd09623ca3c2a843328 ""
+  "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
+  "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -13,11 +16,13 @@
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg" 1616067285 584 2a1075dd71571459f59146da9f7502ad ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1705273579 20144 147463a6a579f4597269ef9565205cfe ""
@@ -30,9 +35,9 @@
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1665067579 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
-  "article.aux" 1724057908 851 deb4a384cb2f1a3eb8632b9508482c4b "pdflatex"
-  "article.tex" 1724057906 991 603cd1a083a300cb6991be135ce1c796 ""
-  "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" 1724057906 991 603cd1a083a300cb6991be135ce1c796 ""
+  "article.aux" 1724960227 851 e956008d827a756e14bb135c82d6318d "pdflatex"
+  "article.tex" 1724960226 3822 37b9b05f3b8ebd07a9d715d5be753c0c ""
+  "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" 1724960226 3822 37b9b05f3b8ebd07a9d715d5be753c0c ""
   (generated)
   "article.aux"
   "article.log"
