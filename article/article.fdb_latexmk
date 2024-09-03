@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1724960227.19722 "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" "article.pdf" "article" 1724960227.87444 0
+["pdflatex"] 1725233144.37198 "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" "article.pdf" "article" 1725233145.03368 0
   "C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717072705 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1719615201 11548 c2506c5ae4e510f22d3f906dd39b91ac ""
   "C:/Users/USUARIO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714391857 24225990 d40def71907e5dd09623ca3c2a843328 ""
@@ -35,9 +35,9 @@
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1665067579 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
-  "article.aux" 1724960227 851 e956008d827a756e14bb135c82d6318d "pdflatex"
-  "article.tex" 1724960226 3822 37b9b05f3b8ebd07a9d715d5be753c0c ""
-  "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" 1724960226 3822 37b9b05f3b8ebd07a9d715d5be753c0c ""
+  "article.aux" 1725233144 851 e956008d827a756e14bb135c82d6318d "pdflatex"
+  "article.tex" 1725233142 3977 274a8db86738b7502e61f46957bbb5d7 ""
+  "c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex" 1725233142 3977 274a8db86738b7502e61f46957bbb5d7 ""
   (generated)
   "article.aux"
   "article.log"
