@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.29)  4 SEP 2024 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.29)  5 SEP 2024 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -472,6 +472,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
+(C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count295
+\float@exts=\toks36
+\float@box=\box66
+\@float@everytoks=\toks37
+\@floatcapt=\box67
+)
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
 
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.r
@@ -482,12 +490,12 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 ode.tex
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsco
 re.code.tex
-\t@pgfplots@toka=\toks36
-\t@pgfplots@tokb=\toks37
-\t@pgfplots@tokc=\toks38
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
 \pgfplots@tmpa=\dimen260
-\c@pgfplots@coordindex=\count295
-\c@pgfplots@scanlineindex=\count296
+\c@pgfplots@coordindex=\count296
+\c@pgfplots@scanlineindex=\count297
 
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplo
 tssysgeneric.code.tex))
@@ -498,9 +506,9 @@ atib\pgfplotsoldpgfsupp_loader.code.tex
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
 
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcomp
 atib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -512,14 +520,14 @@ ure\pgfplotsliststructure.code.tex)
 ure\pgfplotsliststructureext.code.tex)
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststruct
 ure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count297
+\c@pgfplotsarray@tmp=\count298
 )
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststruct
 ure\pgfplotsmatrix.code.tex)
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\p
 gfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count298
-\t@pgfplotstable@a=\toks42
+\c@pgfplotstable@counta=\count299
+\t@pgfplotstable@a=\toks44
 )
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststruct
 ure\pgfplotsdeque.code.tex)
@@ -531,7 +539,7 @@ otsbinary.data.code.tex))
 otsutil.verb.code.tex)
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfli
 brarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count299
+\c@pgfplotslibrarysurf@no=\count300
 
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflib
 rarypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -568,11 +576,11 @@ ledecorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen263
 \pgfdecoratedinputsegmentremainingdistance=\dimen264
 \pgf@decorate@distancetomove=\dimen265
-\pgf@decorate@repeatstate=\count300
+\pgf@decorate@repeatstate=\count301
 \pgfdecorationsegmentamplitude=\dimen266
 \pgfdecorationsegmentlength=\dimen267
 )
-\tikz@lib@dec@box=\box66
+\tikz@lib@dec@box=\box68
 )
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -584,7 +592,7 @@ ikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ations\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzl
 ibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count301
+\pgfplots@numplots=\count302
 \pgfplots@xmin@reg=\dimen268
 \pgfplots@xmax@reg=\dimen269
 \pgfplots@ymin@reg=\dimen270
@@ -623,7 +631,7 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ikz/libraries\tikzlibraryintersections.code.tex
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryintersections.code.tex
-\pgf@intersect@solutions=\count302
+\pgf@intersect@solutions=\count303
 ))
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib
 \tikzlibrarydecorations.softclip.code.tex
@@ -632,8 +640,8 @@ braryintersections.code.tex
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-p
 dftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box69
 ) (article.aux)
 \openout1 = `article.aux'.
 
@@ -655,17 +663,17 @@ LaTeX Font Info:    ... okay on input line 19.
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
+\scratchcounter=\count305
 \scratchdimen=\dimen275
-\scratchbox=\box68
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count307
+\scratchbox=\box70
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen276
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks44
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks46
 )
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
 -base.sty
@@ -745,7 +753,12 @@ Underfull \hbox (badness 2103) in paragraph at lines 38--39
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 been pref-ered
+\OT1/cmr/m/n/10 been pre-ferred
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 38--39
+\OT1/cmr/m/n/10 heav-ier de-spite
  []
 
 
@@ -766,6 +779,11 @@ Underfull \hbox (badness 6332) in paragraph at lines 38--39
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 \OT1/cmr/m/n/10 cos-tumer the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+\OT1/cmr/m/n/10 fuel con-sump-
  []
 
 
@@ -850,7 +868,12 @@ Underfull \hbox (badness 7203) in paragraph at lines 40--40
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--40
-[]|\OT1/cmr/m/n/10 Were ob-taind
+[]|\OT1/cmr/m/n/10 Were ob-tained
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 40--40
+\OT1/cmr/m/n/10 due to sur-veys
  []
 
 
@@ -919,97 +942,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
  []
 
 
-Overfull \hbox (73.05937pt too wide) in paragraph at lines 35--44
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\OT1/cmr/m/n/10 More Sus-tain-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\OT1/cmr/m/n/10 able? Price
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\OT1/cmr/m/n/10 Pre-dic-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\OT1/cmr/m/n/10 Linear re-gres-
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 42--43
+[]|\OT1/cmr/m/n/10 The lin-ear re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 gres-sion has
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 shown ef-fec-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 find out that
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 the make of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 trans-mis-sion
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 ship with the
+ []
+
+
+Overfull \hbox (73.05937pt too wide) in paragraph at lines 35--45
  [] 
  []
 
-[1
+c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45: I can't write
+ on file `article.pdf'.
+(Press Enter to retry, or Control-C to exit; default file extension is `.pdf')
+Please type another file name for output
+c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45: Emergency sto
+p.
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.45 \end{center}
+                 
+*** (job aborted, file error in nonstop mode)
 
-{C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] [4]
-Overfull \hbox (103.85725pt too wide) in paragraph at lines 229--230
-[][] 
- []
-
-[5] [6]
-<data1_plot1.png, id=35, 422.7795pt x 426.393pt>
-File: data1_plot1.png Graphic file (type png)
-<use data1_plot1.png>
-Package pdftex.def Info: data1_plot1.png  used on input line 273.
-(pdftex.def)             Requested size: 120.7521pt x 121.78351pt.
- [7 <./data1_plot1.png>]
-<model_1.png, id=42, 611.4042pt x 396.0396pt>
-File: model_1.png Graphic file (type png)
-<use model_1.png>
-Package pdftex.def Info: model_1.png  used on input line 312.
-(pdftex.def)             Requested size: 120.7521pt x 78.21544pt.
- [8 <./model_1.png>]
-<data2_plot.png, id=48, 849.1725pt x 550.055pt>
-File: data2_plot.png Graphic file (type png)
-<use data2_plot.png>
-Package pdftex.def Info: data2_plot.png  used on input line 335.
-(pdftex.def)             Requested size: 120.7521pt x 78.21577pt.
-
-Overfull \hbox (127.78809pt too wide) in paragraph at lines 367--416
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (123.16312pt too wide) in paragraph at lines 423--472
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9 <./data2_plot.png>] (article.bbl [10]) [11] (article.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
- ***********
- ) 
+ 
 Here is how much of TeX's memory you used:
- 25646 strings out of 474486
- 672195 string characters out of 5742811
- 1945542 words of memory out of 5000000
- 47534 multiletter control sequences out of 15000+600000
- 568466 words of font info for 76 fonts, out of 8000000 for 9000
+ 24972 strings out of 474486
+ 654501 string characters out of 5742811
+ 1934542 words of memory out of 5000000
+ 46871 multiletter control sequences out of 15000+600000
+ 565317 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,20n,93p,753b,2328s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\USUARIO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm1000.pk><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/USUARIO/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USUARIO/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/USUAR
-IO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/U
-sers/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9
-.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/USUARIO/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/USUARIO/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/USUARIO
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
-ers/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy9.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on article.pdf (11 pages, 316272 bytes).
-PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 84i,9n,93p,753b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45:  ==> Fatal er
+ror occurred, no output PDF file produced!

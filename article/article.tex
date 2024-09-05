@@ -6,7 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{lscape}
-
+\usepackage{float}
 \usepackage{pgfplots}
 
 
@@ -25,21 +25,22 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \section{Abstract}
 In data analysis we need to understand that every analysis problems requires its own time before to create a predictive model. This is because we need to verify if our model would it be useful.
-We have two problems to practice that it has been learned about data analysis. As first checkout it'll be a simple dataset that only have two features \(x and y\). So at the first sight seems to be quick but before to create a predictive model, it'll be required to take a look into the data as first step. And also, we got another case about predicte the price of cars.
+We have two problems to practice that it has been learned about data analysis. As first checkout it'll be a simple dataset that only have two features \(x and y\). So at the first sight seems to be quick but before to create a predictive model, it'll be required to take a look into the data as first step. And also, we got another case about predict the price of cars.
 \section{Introduction}
-With the objective to checkout how does it work the linear regression and look out for troubles on the real life. It has been presented two datasets. The first one consist in sintetic data.
+With the objective to checkout how does it work the linear regression and look out for troubles on the real life. It has been presented two datasets. The first one consist in synthetic data.
 And the second one is related wth the prices of cars, and involves several features and the main objective on these datasets is to create a predictor that may predict future data.
 \section{Related works}
-Some of the related works(by now, I'll just let some of the books and the docoumentation that I could  to see)
+Some of the related works(by now, I'll just let some of the books and the documentation that I could  to see)
 \begin{center}
   \begin{tabular}{|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|}
     \hline
     Article & Year & Techniques & Data & Results \\ \hline
-    Consumers' preferences on the Swiss car market: A revealed preference approach& 2019&hedonic pricing approach and linear regression& Were obtained on the auto-Schweiz website&How lastly the costumers have been prefered lighter cars than heaviear despite the increasing of the weight cars and how it is an important factor for the costumer the efficence on the fuel consumtion\\
+    Consumers' preferences on the Swiss car market: A revealed preference approach& 2019&hedonic pricing approach and linear regression& Were obtained on the auto-Schweiz website&How lastly the costumers have been preferred lighter cars than heavier despite the increasing of the weight cars and how it is an important factor for the costumer the efficiency on the fuel consumption\\
     \hline
-    İkinci El Otomobil Fiyat Artışına Etki Eden Faktörlerin Yapısal Eşitlik Modeli ile Tespit Edilmesi: Van İli Örneği( Determination of the Factors Affecting the Used Car Price Increase with the Structural Equation Model: The Case of Van Province) & 2023 & AFA, and structured equation model& Were obtaind due to surveyrs on the province of Van & It has been found how the several features as economics, marketing, strategies and supplying are correlated with the amount of prices, however the economics are is stronger against the other factors\\
+    İkinci El Otomobil Fiyat Artışına Etki Eden Faktörlerin Yapısal Eşitlik Modeli ile Tespit Edilmesi: Van İli Örneği( Determination of the Factors Affecting the Used Car Price Increase with the Structural Equation Model: The Case of Van Province) & 2023 & AFA, and structured equation model& Were obtained due to surveys on the province of Van & It has been found how the several features as economics, marketing, strategies and supplying are correlated with the amount of prices, however the economics are is stronger against the other factors\\
     \hline
-    % Aquí puedes agregar más filas de datos
+    Are Used Cars More Sustainable? Price Prediction Based on Linear Regression&2023&Linear regression&the data was obtained on a website &The linear regression has shown effective results and also it could help to find out that the make of a car influence the price of it, the transmission doesn't seem to have a relationship with the price car\\
+    \hline
   \end{tabular}
 \end{center}
 \section{Methods and materials}
@@ -47,15 +48,15 @@ The material used for this analysis were the usage of python and its libraries f
 \begin{itemize}
   \item Numpy: For mathematical calculations
   \item Pandas: For handle datasets 
-  \item scipy: to evaluate statistical parameters
+  \item Scipy: to evaluate statistical parameters
   \item Scikit-learn: to train our model and check more parameters related with the model chosen.  
 \end{itemize}
-The methodology followed it's the mix of scientific methodology with the abstractacion for a data scientist. 
+The methodology followed it's the mix of scientific methodology with the abstraction for a data scientist. 
 \begin{itemize}
   \item Obtain the data
   \item Make an exploration into the data.
-  \item Check various parameters from the dataset.(These parts involves most of the section of exploratory anaylisis, as also, this step gives several hypothesis to check out at the dataset)
-  \item Now that we have our Hypothesis planted, and also, with the help of th last step that it can be plotted the data. Now it'll be cleaned the data, and for this section it incquires in several steps
+  \item Check various parameters from the dataset.(These parts involves most of the section of exploratory analysis, as also, this step gives several hypothesis to check out at the dataset)
+  \item Now that we have our Hypothesis planted, and also, with the help of th last step that it can be plotted the data. Now it'll be cleaned the data, and for this section it inquires in several steps
   \item \begin{itemize}
     \item Hypothesis proposal
     \item Transformations (logarithm, square, box-cox, capping and flooring)
@@ -63,12 +64,12 @@ The methodology followed it's the mix of scientific methodology with the abstrac
     \item Make the model of linear regression 
   \end{itemize}
   \item check its metrics
-  \item Propouse another hypothesis.
+  \item Propose another hypothesis.
 \end{itemize}
-Also, the main models that has been studied were Linear regression and Knn regresor
-\subsection{Linear regresion}
-When we try to represent something complex it is usual that it has to be create a structure that simplifies the process however, it must contain the enough data and values that can approachthe behaviour of phenomen. In science areas, it is commonnly called model.
-A model can explain a complex phenomen in simple terms that can be easy handled and understandable.
+Also, the main models that has been studied were Linear regression and Knn regressor
+\subsection{Linear regression}
+When we try to represent something complex it is usual that it has to be create a structure that simplifies the process however, it must contain the enough data and values that can approach the behavior of phenom. In science areas, it is commonly called model.
+A model can explain a complex phenom in simple terms that can be easy handled and understandable.
 One of the most simplest models that exist on data science is the linear regression. 
 Knowing:
 $$f:\mathbb{R} \rightarrow \mathbb{R} $$
@@ -97,7 +98,7 @@ $$f(x)=mx+b$$
 \end{figure}
 
 
-This is a linear function(Figure \ref{fig:example2}),  one of the simpliest functions that can be viewed on calculus, sometimes a simple phenomen can be viewed without getting in a huge amount of complexity and could be described with simple models, and when we have a problem or a situation in the reality when we need to create a machine hat can predict future data, what can we do?
+This is a linear function(Figure \ref{fig:example2}),  one of the simplest functions that can be viewed on calculus, sometimes a simple phenom can be viewed without getting in a huge amount of complexity and could be described with simple models, and when we have a problem or a situation in the reality when we need to create a machine hat can predict future data, what can we do?
 In those cases, as it has been portrayed, a linear function can be used as a mathematical feature that attempts to fit on the data.
 \begin{figure}[h]
 \centering
@@ -112,7 +113,6 @@ In those cases, as it has been portrayed, a linear function can be used as a mat
       enlargelimits = true,
       legend style={at={(1.05,1)}, anchor=north west},
   ]
-  % Puntos de datos
   \addplot[
       only marks,
       mark=*,
@@ -126,7 +126,7 @@ In those cases, as it has been portrayed, a linear function can be used as a mat
       5 6
   };
   
-  % Línea de regresión (calculada)
+  
   \addplot[
       domain=0:5, 
       samples=100, 
@@ -141,14 +141,14 @@ In those cases, as it has been portrayed, a linear function can be used as a mat
   \caption{A simple example of a lineal regression}
   \label{fig:example3}
 \end{figure}
-Despite that nowadays exist several types of models that can predict future data, lineal regression as it is one of the simpliest due to it just use a mathematical function that is easy to use, a lot of new models can be tested with a contraposition of lineal regression.
+Despite that nowadays exist several types of models that can predict future data, lineal regression as it is one of the simplest due to it just use a mathematical function that is easy to use, a lot of new models can be tested with a contraposition of lineal regression.
 So, the Lineal regression is described as 
 $$y=\beta_0x+\beta_1+e$$
 $\beta_0$ it is the slope and $\beta_1$ is the intercept. And e is the error tha exist on the model.
 
-However it'll be required to know some metrics that will help us to find out how efficent is our model and to know the error that we have in our model too
+However it'll be required to know some metrics that will help us to find out how efficient is our model and to know the error that we have in our model too
 \begin{itemize}
-  \item $R^2$: This metric can measure how much the model can describe the phenomen. The $R^2 \in [0,1]$ and if the model tends to 1 the model can describe better the phenomen and can be more precise in the predictions.
+  \item $R^2$: This metric can measure how much the model can describe the phenom. The $R^2 \in [0,1]$ and if the model tends to 1 the model can describe better the phenom and can be more precise in the predictions.
   \item $MSE$ and $RMSE = $ Are metrics that measure the distance between the value predict against the real value.
   $$MSE=\frac{1}{n}\Sigma^{n}_{i=1}(y_i-\hat{y}_i)^2 $$
     $$RMSE=\sqrt{\frac{1}{n}\Sigma^{n}_{i=1}(y_i-\hat{y}_i)^2} $$
@@ -157,7 +157,7 @@ However it'll be required to know some metrics that will help us to find out how
 \end{itemize}
 
 \subsection{Knn model}
-It consist in to look out on the data and predict a value according to the vecinity of the values nearest from the data that is presented. Knn presents two basci hyperparameters, the first one is the number of vecinity and the second is the type of distante that it'll be chosen.
+It consist in to look out on the data and predict a value according to the vicinity of the values nearest from the data that is presented. Knn presents two basic hyperparameter, the first one is the number of vicinity and the second is the type of distance that it'll be chosen.
 Knn model has some different parameters if we measure it as classifier. However at this case it'll be used the Knn model as a regressor, so it'll be usable the metrics that it has been described before.
 (figure \ref{fig:example4})
 \begin{figure}[h]
@@ -189,7 +189,7 @@ Knn model has some different parameters if we measure it as classifier. However 
   \caption{A simple example of knn regressor}
   \label{fig:example4}
 \end{figure}
-After knowing the main features that were used at this study, let's look out for the process that has been followed. As it'll have seen, the process aims to use the scientifical method, however, with the feauters of a data analyst
+After knowing the main features that were used at this study, let's look out for the process that has been followed. As it'll have seen, the process aims to use the scientific method, however, with the features of a data analyst
 
 \begin{tikzpicture}[node distance=2cm]
   
@@ -199,13 +199,13 @@ After knowing the main features that were used at this study, let's look out for
   \node (proccess2)[process, right of=process1, xshift=2cm]{Data exploration};
   \node (proccess3)[process, right of=proccess2, xshift=2cm]{Finding descriptive values and NaNs};
   \node (proccess4)[process, below of=proccess3]{Applying transformations};
-  \node (proccess5)[process, left of=proccess4, xshift=-2cm]{Comparate with metrics and plotting};
+  \node (proccess5)[process, left of=proccess4, xshift=-2cm]{Compare with metrics and plotting};
   \node (proccess6)[process, left of=proccess5, xshift=-2cm]{Create a regressor model and checking out the relevant metrics};
  
   \node (decision1) [decision, below of=proccess6, yshift=-2cm] {The model may be upgraded it?};
   \node (process2a) [process, below of=decision1, xshift=-4cm] {Check and reviewing with different perspectives};
   \node (decision2) [decision, below of=decision1, xshift=4cm] {My model is underfitted or overfitted?};
-  \node (process3a)[process, below of=proccess6, xshift=4cm]{Comparate it with Knn model};
+  \node (process3a)[process, below of=proccess6, xshift=4cm]{Compare it with Knn model};
   \node (process4a)[process, below of=decision2, xshift=4cm]{Make their confidence intervals and propose the model};
   \node (stop) [startstop, below of=process2a, yshift=-1cm, xshift=3cm] {Stop};
   
@@ -238,7 +238,7 @@ These were the main steps followed at the work. The part of reading some materia
 
 \section{Data analysis}
 \subsection{first dataset}
-The first data analysis that has been studied was the dataset with sintetic data. As it had been mentioned, following the scientifical methodology we look for the data and it started with a data exploration.
+The first data analysis that has been studied was the dataset with synthetic data. As it had been mentioned, following the scientific methodology we look for the data and it started with a data exploration.
 It obtained the following values 
 \begin{center}
   \begin{tabular}{|c|c|c|}
@@ -253,10 +253,9 @@ It obtained the following values
    percentile $75$   &  25.000000 &   3.677083\\
    maximum   &  50.000000  & 88.976200\\
    \hline
-    % Aquí puedes agregar más filas de datos
   \end{tabular}
 \end{center}
-Now that we have assured that the data are completed we can see the value of the mean and the 50 percentile are quited different, mostly on the variable x, it requires to be cleaned the data. Nevertheless, it is useful to check the correlation with variable x to y too.
+Now that we have assured that the data are completed we can see the value of the mean and the 50 percentile are quite different, mostly on the variable x, it requires to be cleaned the data. Nevertheless, it is useful to check the correlation with variable x to y too.
 The correlation matrix resulted on 
 \begin{center}
   \begin{tabular}{|c|c|c|}
@@ -265,7 +264,6 @@ The correlation matrix resulted on
      y&  1.000000 & -0.389582 \\
      x & -0.389582  & 1.000000 \\
      \hline
-    % Aquí puedes agregar más filas de datos
   \end{tabular}
 \end{center}
 \begin{figure}[h]
@@ -277,17 +275,17 @@ The correlation matrix resulted on
 
 
 The correlation is quite low between x,y. That means that it'll be hard to find a relation with the x and y with linear regression.
-And also, something that we can notice with the plots that they are not normally distribuitted. The x-axis it seems more a exponential distribution than normal.
-Other way to demostrate it could making a hypothesis test and comprobating it with a Shapiro-walk; it consist to propose a null hypothesis, that if the value of statistic is closer to 1 or great, it will reject the hypothesis, therefore the distribution doesn't follow a normal distribution. By other hand if we encounter a value smaller it will indicate is that probably the distribution follows a normal dsitrbution. And also we have de p value that if is greater than 0.05 will indicate that is a normal distribution, in the oppostive way it is a non-normal distribution.
+And also, something that we can notice with the plots that they are not normally distributed. The x-axis it seems more a exponential distribution than normal.
+Other way to demonstrate it could making a hypothesis test and verifying it with a Shapiro-walk; it consist to propose a null hypothesis, that if the value of statistic is closer to 1 or great, it will reject the hypothesis, therefore the distribution doesn't follow a normal distribution. By other hand if we encounter a value smaller it will indicate is that probably the distribution follows a normal distribution. And also we have de p value that if is greater than 0.05 will indicate that is a normal distribution, in the opposite way it is a non-normal distribution.
 The test concluded with a distribution of  $4.85*10^-28$ so it is not a normal distribution.
 At this point we can choose several ways to follow
 \begin{itemize}
   \item Trying to normalizing
   \item Trying with models more associated with exponential distributions or models that will no depend on the distribution.
-  \item Infere with other features
+  \item Infer with other features
 \end{itemize} 
 Due to the objectives of the work, the first attempt it'll be used.
-At this dataset has been followed 4 approaches to look the efficence of methods at the cleaning of the data.
+At this dataset has been followed 4 approaches to look the efficiency of methods at the cleaning of the data.
 However, it has been tested several types of transformations to check out if it'll be more useful the logarithm transformation according with the parameter of skew 
 
 \begin{center}
@@ -301,12 +299,11 @@ However, it has been tested several types of transformations to check out if it'
      box-cox&0.093649&\dots\\
      outliers&0.40335&1.058543\\
       \hline
-    % Aquí puedes agregar más filas de datos
   \end{tabular}
 \end{center}
-It could seems some techniques are better however logarithm tranformation has a better resolution in the skew of both variables.    
+It could seems some techniques are better however logarithm transformation has a better resolution in the skew of both variables.    
 \subsection{first method}
-The fisrt approach to make a model was transforming with logarithm and making a cross validation
+The first approach to make a model was transforming with logarithm and making a cross validation
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.35\textwidth]{model_1.png}
@@ -323,7 +320,7 @@ And therefore it was contrasted with the Knn model, getting the next values
      MSE&0.09611374428381783&0.11904\\
      RMSE&0.30971201639466434&0.33166\\
      \hline
-    % Aquí puedes agregar más filas de datos
+    %
   \end{tabular}
 \end{center}
 The model has been contrasted with both models and with the same cleaned data, as also trained at the same way respectively at the model 
@@ -333,14 +330,14 @@ The confidence value on 95\% interval is  from $(2.172214750599946, 3.3346891698
 and is has been seen the value was fitted correctly.
 \begin{figure}[h]
   \includegraphics[width=0.35\textwidth]{data2_plot.png}
-  \caption{Lineal regresion with the intervals set}
+  \caption{Lineal regression with the intervals set}
 
   \label{fig:example_intervals}
 \end{figure}
 However it has been made a generalized model to linear regression in a set of dots (fig\ref{fig:example_intervals})
 The equation for this model is 
 $$y=-0.21773690693332431x+3.2542468461834333$$
-\subsection{second method}
+\subsection{Second method}
 The second approach it consisted to just transforming the value with logarithm without CV 5x2
 \begin{center}
   \begin{tabular}{|c|c|c|}
@@ -350,25 +347,71 @@ The second approach it consisted to just transforming the value with logarithm w
      MSE&0.1127456496305317&0.11904364904719832\\
      RMSE&0.3357761897909554&0.33166\\
      \hline
-    % Aquí puedes agregar más filas de datos
   \end{tabular}
 \end{center}
+The values obtained are quite low, and the test of interval values with a random value it has been displayed 
+\begin{figure}[h]
+  \includegraphics[width=0.35\textwidth]{model_2.png}
+  \caption{Lineal regression with the confidence intervals}
+
+  \label{fig:example_intervals}
+\end{figure}
+The random value tested was $x=2.3$ $ y=2.712267315$
+The CI of  95\% for 2.3 $(2.1310301053631586, 3.2935045246368415)$
+so the equation resulting is: $$y=3.28236728 -0.24786955x $$
+
 \subsection{third method}
-The outliers were fixed with capping and flooring methos using the median
+The outliers were fixed with capping and flooring methods using the median
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+     metric & Lineal regression & Knn \\ \hline
+     $R^2$& 32.19327627743514\%&32.92025378085354\%\\
+     MSE& 0.002590185931743603&0.09954163106601016\\
+     RMSE&0.3097120163946644&0.3155021886\\
+     \hline
+
+  \end{tabular}
+\end{center}
+\begin{figure}[h]
+  \includegraphics[width=0.35\textwidth]{model_3_3.png}
+  \caption{Lineal regression with the confidence intervals}
+
+  \label{fig:example_intervals_3}
+\end{figure}
+The random value tested was $x=0.4$ $ y=1.1624568760450196$
+The CI of  95\% for 2.3 $(1.0655741648818118, 1.2593395872082274)$
+so the equation resulting is: $$y=1.2573964360450196 -0.23734890073453882x $$
+
 \subsection{fourth method}
-The last methods were used at this model
+The last methods were used at this model. And also the test of Knn, was a little bit different to due it has been included the type of distance
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+     metric & Lineal regression & Knn \\ \hline
+     $R^2$& 37.1 \%&38.88337562736399\%\\
+     MSE& 0.08067515724063212&0.06685108607726611\\
+     RMSE&0.2839075215367599&0.3155021886\\
+     \hline
+    
+  \end{tabular}
+\end{center}
+Although, for this search of parameters, it got the Minkowski dataset, and finally the value of the intervals and equation are described as 
+The random value tested was $x=0.4$ $ y=3.1646101221355143$
+The CI of  95\% for 2.3 $(2.624302151585808, 3.7049180926852205)$
+so the equation resulting is: $$y=3.2466778431246275 -0.20516930247278303x $$
 
 The methods were contrasted by the simplest model and also the intervals were obtained, however that section it comprehends the results discussion
 
-And one of the most important things that iat has been obtained is this table that compiles all the metrics and parameters that has been obtained
+And one of the most important things that it has obtained is this table that compiles all the metrics and parameters that has been obtaining
 \begin{table}[h]
-  \centering
-  \small % Cambia el tamaño de la fuente aquí
+  \scriptsize 
+  \setlength{\extrarowheight}{-2pt} 
   \begin{tabular}{|l|l|l|}
   \hline
-  \textbf{Métrica} & \textbf{model1} & \textbf{model2} \\
+  \textbf{Metric} & \textbf{model1} & \textbf{model2} \\
   \hline
-  $R^2$ & 36.9\% & 39.9\% \\
+  $R^2$ & 35.4\% & 15.05\% \\
   \hline
   MSE & 0.0961 & 0.1127 \\
   \hline
@@ -413,18 +456,19 @@ And one of the most important things that iat has been obtained is this table th
   Condition Number & 2.26 & 2.16 \\
   \hline
   \end{tabular}
-  \caption{Comparación de los modelos 1 y 2}
+  \caption{Model comparison 1 and 2}
   \label{tab:modelos12}
   \end{table}
+  \begin{table}[H]
   
-  \begin{table}[h]
-  \centering
-  \small % Cambia el tamaño de la fuente aquí
+  \scriptsize 
+    \setlength{\extrarowheight}{-2pt} 
+
   \begin{tabular}{|l|l|l|}
   \hline
-  \textbf{Métrica} & \textbf{model3} & \textbf{model4} \\
+  \textbf{Metric} & \textbf{model3} & \textbf{model4} \\
   \hline
-  $R^2$ & 33.8\% & 37.1\% \\
+  $R^2$ & 32.193\% & 37.1\% \\
   \hline
   MSE & 0.014957 & 0.0807 \\
   \hline
@@ -469,26 +513,223 @@ And one of the most important things that iat has been obtained is this table th
   Condition Number & 4.45 & 2.26 \\
   \hline
   \end{tabular}
-  \caption{Comparación de los modelos 3 y 4}
+  \caption{Model comparison 3 and 4}
   \label{tab:modelos34}
   \end{table}
 
 
-
-The next dataset that it has been studied was about cars. It is a car's magazine from 1985 that compiles prices and features from several cars. 
+\subsection{Second dataset}
+The next dataset that it has been studying was about cars. It is a car's magazine from 1985 that compiles prices and features from several cars. 
 For this dataset it has been read some papers(include the cite) to understand some of the features and its relationship. 
-
-
-
 As a one of the first steps was the cleaning the data, and a data exploration was made to look for missing values and 
+\begin{center}
+\begin{figure}[H]
+  \includegraphics[width=1\textwidth]{heatmap.png}
+  \caption{The heatmap of correlation}
+  \label{fig:heatmap}
+\end{figure}
+\end{center}
+The heatmap (Figure \ref{fig:heatmap}) represents how is related a variable with other. As the objective of the study is to making a model that can predict the price of cars according to certain variables. 
+However a tool that can save time it is to see the correlation with continuous variables. So those variables that have been analyzed were the Curb weight, engine size, horsepower city-mpg and highway-mpg.
+The procedure to clean up the data was the same as the previous dataset however some columns contained a few NaN values and they must be changed. As also, some features are measured by different magnitudes, for example, amounts of money and horse power, so it would useful to standardize the data and also it could be applied a logarithm transformation due to some the dataset wasn't following a normal distribution, instead it was a exponential distribution(figure \ref{fig:box},\ref{fig:box2}).
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{box.png}
+      \caption*{Example when the data is not standardized}
+      \label{fig:box}
+  \end{minipage}
+  \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{box2.png}
+      \caption*{Example when data uis standardized and transformed}
+      \label{fig:box2}
+  \end{minipage}
+\end{figure}
+\subsection{Engine size}
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& 73.62087367142167 \%&78.14960577066459\%\\
+   MSE& 0.00992703573774292&0.008260694761950247\\
+   RMSE&0.09960553714701531&0.09078358735816178\\
+   \hline
+  
+\end{tabular}
+
+Prediction for x=0.9: 0.873558685297521
+Ci of  95\%for x=0.9: (0.6755512178129525, 1.0715661527820897)
+$$y=1.0421234211972827x-0.06435239378003343$$
+\subsection{Miles per gallon on city }
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& 60.45640689950125 \%&63.98078808830601\%\\
+   MSE&0.020279279592056144&0.01864935309235264\\
+   RMSE&0.14237431771458053&0.13622653661454523\\
+   \hline
+  
+\end{tabular}
+
+Prediction for x=0.9: 0.001530863668857796
+Ci of 95\%for x=0.9: (-0.2679841644933157, 0.2710458918310313)
+$$y=-0.847735376275263x+0.7644927023165945$$
+%%
+\subsection{Highway miles per gallon }
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& 60.26238063837296 \%&71.4051650378093\%\\
+   MSE&0.020296748345956392&0.01473467535564263\\
+   RMSE&0.14246665691899474&0.12126069885616314\\
+   \hline
+  
+\end{tabular}
+
+Prediction for x=0.9: 0.029920806311725112
+Ci of  95\%for x=0.9: (-0.23756924465403179, 0.297410857277482)
+$$y=-0.8749508264218194x+0.8173765500913626$$
+%%
+\subsection{Curb weight}
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& 75.95183149109518 \%&75.37829642479748\%\\
+   MSE&  0.012140499045124736& 0.012413594738192302\\
+   RMSE&0.1262230883265539&0.11115941370057997\\
+   \hline
+\end{tabular}
+
+Prediction for x=0.9: 0.8331700416235279
+Ci of  95\%for x=0.9: (0.6006405680156519, 1.065699515231404)
+$$y=0.9548221722260348x -0.026169913379903483$$
+
+\subsection{Horse power}
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& R²: 69.07940114232951 \%&43.319290242601016\%\\
+   MSE&  0.08221699892102004& 0.13686099980559793\\
+   RMSE&0.28673506747696564&0.3696553507791872\\
+   \hline
+\end{tabular}
+
+Prediction for x=0.9: 0.8188622328838921
+Ci of  95\%for x=0.9: (0.5575508676925711, 1.0801735980752132)
+$$y=0.8850130631724356x +0.022350476028700144$$
+\subsection{Make}
+\begin{tabular}{|c|c|c|}
+  \hline
+   metric & Lineal regression & Knn \\ \hline
+   $R^2$& 64.3410145660548 \%&55.39383851984723\%\\
+   MSE&  0.010664898715086689& 0.022665468018166633\\
+   RMSE&0.018231972174382653&0.15049592765441985\\
+   \hline
+\end{tabular}
+
+Prediction for x=0.7: 9.776875346817139
+Ci of 95\%for x=0.9: (9.502410532700683, 10.051340160933595)
+$$y=0.18958328x +9.644167050817138$$
+This model it has to be taken with careful due is a colinear model that has a several brands of cars. At also, the slopes are 
+$$slopes=0.18958328,0.50766223 ,-1.26198477, -0.99000114 ,-0.92894517, -0.6305545,
+1.16321074, -0.68259389,  1.23056047 , 0.09693613, -0.91120827, -0.65395334,
+-0.00913223, -0.95232464 , 0.75358479, -0.68607991,  0.0266443,  -0.99147226,
+-0.65961111, -0.6527091 ,  0.27815024$$
+The way that it has been chosen the categorical variable of Make than the other variables, it is because they were tested with ANOVA, and the statistical significance
+\begin{table}[h]
+  \centering
+  \scriptsize
+  \setlength{\extrarowheight}{2pt} 
+  \begin{tabular}{|l|c|c|c|c|}
+  \hline
+  \textbf{Categoric} & \textbf{Square sum (sum\_sq)} & \textbf{degree freedom (df)} & \textbf{F} & \textbf{Value PR(>F)} \\ 
+  \hline
+  \textbf{make}       & 9.750960e+09 & 21.0 & 29.502216 & 1.019818e-47 \\
+  \textbf{fuelType}   & 1.534125e+08 & 1.0  & 2.495859  & 0.115703 \\
+  \textbf{aspiration} & 3.969954e+08 & 1.0  & 6.587290  & 0.010991 \\
+  \textbf{numofdoors} & 2.672851e+07 & 1.0  & 0.427171  & 0.514127 \\
+  \textbf{body}       & 1.960055e+09 & 4.0  & 9.183927  & 7.844576e-07 \\
+  \textbf{drive}      & 5.060130e+09 & 2.0  & 67.503667 & 3.539271e-23 \\
+  \textbf{engineloc}  & 1.383992e+09 & 1.0  & 24.979629 & 0.000001 \\
+  \textbf{type}       & 2.538008e+09 & 6.0  & 8.298116  & 5.008078e-08 \\
+  \textbf{cylinders}  & 7.336567e+09 & 6.0  & 45.727054 & 7.149270e-35 \\
+  \textbf{system}     & 4.352758e+09 & 7.0  & 14.797402 & 1.865735e-15 \\
+  \hline
+  \end{tabular}
+  \caption{ ANOVA Results with the value PR($>$F) for categorical differences.}
+  \label{tab:anova_results}
+  \end{table}
+  \begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image1.png}
+        \caption*{Engine size regressor}
+    \end{minipage}
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image2.png}
+        \caption*{Miles per gallon city}
+    \end{minipage}
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image3.png}
+        \caption*{Highway miles per gallon}
+    \end{minipage}
+
+    \vspace{0.5cm} 
+
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image4.png}
+        \caption*{Curb weight}
+    \end{minipage}
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image5.png}
+        \caption*{Horse power}
+    \end{minipage}
+    \begin{minipage}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{image6.png}
+        \caption*{Make}
+    \end{minipage}
+\end{figure}
+Another thing to take in mind is the tendency that follows tha variables
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{t1.png}
+      \caption*{Curb weight and brand}
+      \label{fig:t}
+  \end{minipage}
+  \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{t2.png}
+      \caption*{Engine size and brand}
+      \label{fig:t2}
+  \end{minipage}
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{t3.png}
+    \caption*{Prices and brand}
+    \label{fig:t3}
+\end{minipage}
+\end{figure}
 \section{Discussion}
 \subsection{First data-set}
-
-
+As we can observe on the table \ref{tab:modelos12} and table \ref{tab:modelos34} it proposed 4 different models with different type of data cleaning, however we have seen different results in each one. If we see the $R^2$ of the models the worst is the second model, and also, as it saw in the tables from each table, the value of the Knn and The regressor is the lowest although, is close among them. The best $R^2$ and also, it has a one of the closest values with Knn regressor, is the fourth model.
+Now in terms of MSE and RMSE the third model had a lowest MSE and RMSE but the fourth model it has also a good resolution in that terms.
+Always in Data science it can be created different models to represent different phenoms or different aims. In this case, we have seen that despite that the fourth model doesn't have the best MSE and RMSE from all models however it is no the worst, the percentage of describing data is the highest so if we have this model with just this two variables and type of regressor, it can choose the fourth model. However the best thing that it can be done on this dataset could it be use different models or different treatments on the distribution
 \subsection{Second data-set}
-\section{Conclussions and future work}
-\citep{WEBER2019109}
-\citep{article_1012052}
+In base on the related works, \citep{article_1012052} used a similar approach in the creation of the model and also at the prediction of price of cars. And here it found that the cars with a certain make have more influence in a price than cars with a unknown brand. And \citep{WOS:000927105100001} the way to describe different features that can lead to different prices of car int the Van regions had a similarity workflow than this work. As also they used similar metrics. And \citep{WEBER2019109} they found how the fuel consumption has a huge weight into the prices of cars. As also the make is other important factor to see.
+In the last analysis, it could have seen that the main features had a strong relation were those related with the motor and the structure of the car. And also the efficiency of the combustion of fuel. In the case of categorical variables, the variable that had a better resolution in predictions was the make, so here it can be refuted the past works. To indicate the best model in terms of the car's infrastructure; could be the curb weight because it had a $r^2$ of 75\% and its Knn model has  similar approach. Also its MSE and RMSE despite that is not the best of all, it is second model that has a good resolution on MSE and RMSE. 
+These variables which are related with the structure of the car, tend to follow the mark and the prices respect to the mark has a similar approach. So it can be deduce that relevant and expensive cars would try to make their cars as better as possible, such in the efficiency of consumption of fuel or the curb weight, horse power. Meanwhile those brands that has a cheaper cost don't tend to have the better structure features.(figure\ref{fig:t},\ref{fig:t2},\ref{fig:t3})  
+\section{Conclusions and future work}
+In both datasets can be used other type of models and see its efficiency in the prediction, as also it could be useful try to use regressions that are more associated with exponential distributions. In the second part it could aim to see the colineality and compare the $r^2$ obtained in the last models respect to the colinear model.
+To make a good analysis it can be challenging because several variables could be related among them, but when it makes an analysis the best way to know if it is following the correct path is looking for related works and its results, with this as priority it could be good help to delimitate the variables to use. Also, the dataset 2 shows how tendencies works on and it is important to look out at them.
 \bibliographystyle{apalike}
 \bibliography{references}
 
