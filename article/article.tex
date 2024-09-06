@@ -12,7 +12,7 @@
 
 \usetikzlibrary{shapes.geometric, arrows,fillbetween}
 
-\title{U1}
+\title{Dataset analysis with simple regression and Knn models}
 \author{Rodriguez González José Adrián }
 \date{August 2024}
 
@@ -30,9 +30,10 @@ We have two problems to practice that it has been learned about data analysis. A
 With the objective to checkout how does it work the linear regression and look out for troubles on the real life. It has been presented two datasets. The first one consist in synthetic data.
 And the second one is related wth the prices of cars, and involves several features and the main objective on these datasets is to create a predictor that may predict future data.
 \section{Related works}
-Some of the related works(by now, I'll just let some of the books and the documentation that I could  to see)
+Articles that were helpful to compare results and methodologies.
+\begin{table}[H]
 \begin{center}
-  \begin{tabular}{|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|}
+  \begin{tabular}{|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.9cm}|}
     \hline
     Article & Year & Techniques & Data & Results \\ \hline
     Consumers' preferences on the Swiss car market: A revealed preference approach& 2019&hedonic pricing approach and linear regression& Were obtained on the auto-Schweiz website&How lastly the costumers have been preferred lighter cars than heavier despite the increasing of the weight cars and how it is an important factor for the costumer the efficiency on the fuel consumption\\
@@ -42,7 +43,9 @@ Some of the related works(by now, I'll just let some of the books and the docume
     Are Used Cars More Sustainable? Price Prediction Based on Linear Regression&2023&Linear regression&the data was obtained on a website &The linear regression has shown effective results and also it could help to find out that the make of a car influence the price of it, the transmission doesn't seem to have a relationship with the price car\\
     \hline
   \end{tabular}
+  \caption{Literature related with the work}
 \end{center}
+\end{table}
 \section{Methods and materials}
 The material used for this analysis were the usage of python and its libraries for data analysis and machine learning:
 \begin{itemize}
@@ -146,7 +149,7 @@ So, the Lineal regression is described as
 $$y=\beta_0x+\beta_1+e$$
 $\beta_0$ it is the slope and $\beta_1$ is the intercept. And e is the error tha exist on the model.
 
-However it'll be required to know some metrics that will help us to find out how efficient is our model and to know the error that we have in our model too
+However it'll be required to know some metrics that will help us to find out how efficient is our model and to know the error that we have in our model too\citep{bruce2020practical}
 \begin{itemize}
   \item $R^2$: This metric can measure how much the model can describe the phenom. The $R^2 \in [0,1]$ and if the model tends to 1 the model can describe better the phenom and can be more precise in the predictions.
   \item $MSE$ and $RMSE = $ Are metrics that measure the distance between the value predict against the real value.
@@ -160,7 +163,7 @@ However it'll be required to know some metrics that will help us to find out how
 It consist in to look out on the data and predict a value according to the vicinity of the values nearest from the data that is presented. Knn presents two basic hyperparameter, the first one is the number of vicinity and the second is the type of distance that it'll be chosen.
 Knn model has some different parameters if we measure it as classifier. However at this case it'll be used the Knn model as a regressor, so it'll be usable the metrics that it has been described before.
 (figure \ref{fig:example4})
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
 \begin{tikzpicture}
   \begin{axis}[
@@ -240,6 +243,7 @@ These were the main steps followed at the work. The part of reading some materia
 \subsection{first dataset}
 The first data analysis that has been studied was the dataset with synthetic data. As it had been mentioned, following the scientific methodology we look for the data and it started with a data exploration.
 It obtained the following values 
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -254,9 +258,12 @@ It obtained the following values
    maximum   &  50.000000  & 88.976200\\
    \hline
   \end{tabular}
+  \caption{Parameters}
 \end{center}
+\end{table}
 Now that we have assured that the data are completed we can see the value of the mean and the 50 percentile are quite different, mostly on the variable x, it requires to be cleaned the data. Nevertheless, it is useful to check the correlation with variable x to y too.
 The correlation matrix resulted on 
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -265,11 +272,13 @@ The correlation matrix resulted on
      x & -0.389582  & 1.000000 \\
      \hline
   \end{tabular}
+  \caption{Correlation}
 \end{center}
+\end{table}
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.35\textwidth]{data1_plot1.png}
-  \caption{E}
+  \includegraphics[width=0.65\textwidth]{data1_plot1.png}
+  \caption{Exploratory data}
   \label{fig:ejemplo}
 \end{figure}
 
@@ -287,7 +296,7 @@ At this point we can choose several ways to follow
 Due to the objectives of the work, the first attempt it'll be used.
 At this dataset has been followed 4 approaches to look the efficiency of methods at the cleaning of the data.
 However, it has been tested several types of transformations to check out if it'll be more useful the logarithm transformation according with the parameter of skew 
-
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -301,17 +310,19 @@ However, it has been tested several types of transformations to check out if it'
       \hline
   \end{tabular}
 \end{center}
+\caption{Skewness in different types of transformations}
+\end{table}
 It could seems some techniques are better however logarithm transformation has a better resolution in the skew of both variables.    
-\subsection{first method}
+\subsection{First method}
 The first approach to make a model was transforming with logarithm and making a cross validation
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.35\textwidth]{model_1.png}
+  \includegraphics[width=0.65\textwidth]{model_1.png}
   \caption{Lineal regression}
   \label{fig:example_1}
 \end{figure}
 And therefore it was contrasted with the Knn model, getting the next values
-
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -322,14 +333,18 @@ And therefore it was contrasted with the Knn model, getting the next values
      \hline
     %
   \end{tabular}
+  \caption{First table}
 \end{center}
+\end{table}
 The model has been contrasted with both models and with the same cleaned data, as also trained at the same way respectively at the model 
 However, the Lineal regressor has been predicting the data within the confidence.
 For example, it added a value x on 2.3 and the result in y is 2.7534 
 The confidence value on 95\% interval is  from $(2.172214750599946, 3.334689169873629)$
-and is has been seen the value was fitted correctly.
+and it has been seen the value was fitted correctly.
+The best parameters found on kNN was with 21 neighbors and manhattan distance
 \begin{figure}[h]
-  \includegraphics[width=0.35\textwidth]{data2_plot.png}
+  \center
+  \includegraphics[width=0.65\textwidth]{data2_plot.png}
   \caption{Lineal regression with the intervals set}
 
   \label{fig:example_intervals}
@@ -339,29 +354,37 @@ The equation for this model is
 $$y=-0.21773690693332431x+3.2542468461834333$$
 \subsection{Second method}
 The second approach it consisted to just transforming the value with logarithm without CV 5x2
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
      metric & Lineal regression & Knn \\ \hline
-     $R^2$& 15.0589474050694\%&22.562569548739275\%\\
+     $R^2$& 15.0589474050694\%&43.57674995779635\%\\
      MSE&0.1127456496305317&0.11904364904719832\\
      RMSE&0.3357761897909554&0.33166\\
      \hline
   \end{tabular}
+  \caption{Second model}
 \end{center}
+\end{table}
 The values obtained are quite low, and the test of interval values with a random value it has been displayed 
-\begin{figure}[h]
-  \includegraphics[width=0.35\textwidth]{model_2.png}
-  \caption{Lineal regression with the confidence intervals}
+\begin{center}
 
+\begin{figure}[h]
+  \center
+  \includegraphics[width=0.65\textwidth]{model_2.png}
+  \caption{Lineal regression with the confidence intervals}
   \label{fig:example_intervals}
 \end{figure}
+\end{center}
 The random value tested was $x=2.3$ $ y=2.712267315$
 The CI of  95\% for 2.3 $(2.1310301053631586, 3.2935045246368415)$
 so the equation resulting is: $$y=3.28236728 -0.24786955x $$
 
-\subsection{third method}
+Here it found with 21 neighbors but with cosine distance
+\subsection{Third method}
 The outliers were fixed with capping and flooring methods using the median
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -372,9 +395,13 @@ The outliers were fixed with capping and flooring methods using the median
      \hline
 
   \end{tabular}
+  \caption{Third method}
+
 \end{center}
+\end{table}
 \begin{figure}[h]
-  \includegraphics[width=0.35\textwidth]{model_3_3.png}
+  \center
+  \includegraphics[width=0.65\textwidth]{model_3_3.png}
   \caption{Lineal regression with the confidence intervals}
 
   \label{fig:example_intervals_3}
@@ -385,6 +412,7 @@ so the equation resulting is: $$y=1.2573964360450196 -0.23734890073453882x $$
 
 \subsection{fourth method}
 The last methods were used at this model. And also the test of Knn, was a little bit different to due it has been included the type of distance
+\begin{table}[H]
 \begin{center}
   \begin{tabular}{|c|c|c|}
     \hline
@@ -396,6 +424,8 @@ The last methods were used at this model. And also the test of Knn, was a little
     
   \end{tabular}
 \end{center}
+\caption{The four method}
+\end{table}
 Although, for this search of parameters, it got the Minkowski dataset, and finally the value of the intervals and equation are described as 
 The random value tested was $x=0.4$ $ y=3.1646101221355143$
 The CI of  95\% for 2.3 $(2.624302151585808, 3.7049180926852205)$
@@ -405,7 +435,7 @@ The methods were contrasted by the simplest model and also the intervals were ob
 
 And one of the most important things that it has obtained is this table that compiles all the metrics and parameters that has been obtaining
 \begin{table}[h]
-  \scriptsize 
+  \small 
   \setlength{\extrarowheight}{-2pt} 
   \begin{tabular}{|l|l|l|}
   \hline
@@ -437,7 +467,8 @@ And one of the most important things that it has obtained is this table that com
   \hline
   $P>\|t\|$ & const: 0.000, x: 0.000 & const: 0.000, x: 0.000 \\
   \hline
-  Confidence Intervals & const=[3.2068, 3.3017], x=[-0.2531, -0.1824] & const=[3.2444, 3.3203], x=[-0.2777, -0.2181] \\
+  Confidence Intervals & const=[3.2068, 3.3017]  & const=[3.2444, 3.3203] \\
+  & x=[-0.2531, -0.1824] &x=[-0.2777, -0.2181]\\
   \hline
   Omnibus & 41.738 & 37.308 \\
   \hline
@@ -461,7 +492,7 @@ And one of the most important things that it has obtained is this table that com
   \end{table}
   \begin{table}[H]
   
-  \scriptsize 
+  \small
     \setlength{\extrarowheight}{-2pt} 
 
   \begin{tabular}{|l|l|l|}
@@ -494,7 +525,8 @@ And one of the most important things that it has obtained is this table that com
   \hline
   $P>\|t\|$ & const: 0.000, x: 0.000 & const: 0.000, x: 0.000 \\
   \hline
-  Confidence Intervals & const=[1.8279, 1.886], x=[-0.3584, -0.2522] & const=[3.2024, 3.2909], x=[-0.2384, -0.1719] \\
+  Confidence Intervals & const=[1.8279, 1.886] & const=[3.2024, 3.2909],  \\
+  &  x=[-0.3584, -0.2522]&x=[-0.2384, -0.1719]\\
   \hline
   Omnibus & 40.637 & 35.555 \\
   \hline
@@ -524,7 +556,8 @@ For this dataset it has been read some papers(include the cite) to understand so
 As a one of the first steps was the cleaning the data, and a data exploration was made to look for missing values and 
 \begin{center}
 \begin{figure}[H]
-  \includegraphics[width=1\textwidth]{heatmap.png}
+  \center
+  \includegraphics[width=1.1\textwidth]{heatmap.png}
   \caption{The heatmap of correlation}
   \label{fig:heatmap}
 \end{figure}
@@ -534,20 +567,21 @@ However a tool that can save time it is to see the correlation with continuous v
 The procedure to clean up the data was the same as the previous dataset however some columns contained a few NaN values and they must be changed. As also, some features are measured by different magnitudes, for example, amounts of money and horse power, so it would useful to standardize the data and also it could be applied a logarithm transformation due to some the dataset wasn't following a normal distribution, instead it was a exponential distribution(figure \ref{fig:box},\ref{fig:box2}).
 \begin{figure}[H]
   \centering
-  \begin{minipage}[b]{0.3\textwidth}
+  \begin{minipage}[b]{0.5\textwidth}
       \centering
       \includegraphics[width=\textwidth]{box.png}
       \caption*{Example when the data is not standardized}
       \label{fig:box}
   \end{minipage}
-  \begin{minipage}[b]{0.3\textwidth}
+  \begin{minipage}[b]{0.5\textwidth}
       \centering
       \includegraphics[width=\textwidth]{box2.png}
-      \caption*{Example when data uis standardized and transformed}
+      \caption*{Example when data is standardized and transformed}
       \label{fig:box2}
   \end{minipage}
 \end{figure}
 \subsection{Engine size}
+\begin{table}[H]
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
@@ -555,13 +589,16 @@ The procedure to clean up the data was the same as the previous dataset however 
    MSE& 0.00992703573774292&0.008260694761950247\\
    RMSE&0.09960553714701531&0.09078358735816178\\
    \hline
-  
-\end{tabular}
-
+  \end{tabular}
+  \caption{Engine size}
+\end{table}
 Prediction for x=0.9: 0.873558685297521
+
 Ci of  95\%for x=0.9: (0.6755512178129525, 1.0715661527820897)
 $$y=1.0421234211972827x-0.06435239378003343$$
+The best parameters obtained were with Minkowski distance with 10 neighbors,  value of $p=1$ and the weight was according with the distance 
 \subsection{Miles per gallon on city }
+\begin{table}[H]
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
@@ -569,14 +606,17 @@ $$y=1.0421234211972827x-0.06435239378003343$$
    MSE&0.020279279592056144&0.01864935309235264\\
    RMSE&0.14237431771458053&0.13622653661454523\\
    \hline
-  
-\end{tabular}
-
+  \end{tabular}
+  \caption{ Miles per gallon on city}
+\end{table}
 Prediction for x=0.9: 0.001530863668857796
+
 Ci of 95\%for x=0.9: (-0.2679841644933157, 0.2710458918310313)
 $$y=-0.847735376275263x+0.7644927023165945$$
 %%
+The best parameters obtained were with Minkowski distance with 10 neighbors,  value of $p=1$ and the weight was uniform
 \subsection{Highway miles per gallon }
+\begin{table}[H]
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
@@ -584,58 +624,79 @@ $$y=-0.847735376275263x+0.7644927023165945$$
    MSE&0.020296748345956392&0.01473467535564263\\
    RMSE&0.14246665691899474&0.12126069885616314\\
    \hline
-  
-\end{tabular}
-
+  \end{tabular}
+  \caption{ Highway miles per gallon}
+\end{table}
 Prediction for x=0.9: 0.029920806311725112
+
 Ci of  95\%for x=0.9: (-0.23756924465403179, 0.297410857277482)
 $$y=-0.8749508264218194x+0.8173765500913626$$
+The best parameters obtained were with Minkowski distance with 5 neighbors,  value of $p=1$ and the weight was uniform
 %%
 \subsection{Curb weight}
+\begin{table}[H]
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
    $R^2$& 75.95183149109518 \%&75.37829642479748\%\\
    MSE&  0.012140499045124736& 0.012413594738192302\\
-   RMSE&0.1262230883265539&0.11115941370057997\\
+   RMSE&0.10997951973411302
+   &0.11115941370057997\\
    \hline
-\end{tabular}
-
+  \end{tabular}
+  \caption{ Curb weight}
+\end{table}
 Prediction for x=0.9: 0.8331700416235279
 Ci of  95\%for x=0.9: (0.6006405680156519, 1.065699515231404)
 $$y=0.9548221722260348x -0.026169913379903483$$
 
+The best parameters obtained were with Minkowski distance with 5 neighbors,  value of $p=1$ and the weight was uniform
+\begin{table}[H]
 \subsection{Horse power}
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
-   $R^2$& R²: 69.07940114232951 \%&43.319290242601016\%\\
-   MSE&  0.08221699892102004& 0.13686099980559793\\
-   RMSE&0.28673506747696564&0.3696553507791872\\
+   $R^2$& R²: 69.07940114232951 \%&76.03392244337541\%\\
+   MSE&  0.018231972174382657& 0.012141600878739993\\
+   RMSE&0.1350239468208517& 0.11008958256719932\\
    \hline
-\end{tabular}
-
+  \end{tabular}
+  \caption{ Horse power}
+\end{table}
 Prediction for x=0.9: 0.8188622328838921
+
 Ci of  95\%for x=0.9: (0.5575508676925711, 1.0801735980752132)
 $$y=0.8850130631724356x +0.022350476028700144$$
+
+The best parameters obtained were with Minkowski distance with 5 neighbors,  value of $p=1$ and the weight was according to the distance
 \subsection{Make}
+\begin{table}[H]
 \begin{tabular}{|c|c|c|}
   \hline
    metric & Lineal regression & Knn \\ \hline
-   $R^2$& 64.3410145660548 \%&55.39383851984723\%\\
-   MSE&  0.010664898715086689& 0.022665468018166633\\
-   RMSE&0.018231972174382653&0.15049592765441985\\
+   $R^2$& 64.3410145660548 \%&57.88546475881029\%\\
+   MSE&  0.010664898715086689&  0.021450305579098994\\
+   RMSE&0.018231972174382653&0.14644366261328212
+   \\
    \hline
-\end{tabular}
-
+  \end{tabular}
+  \caption{ Make}
+\end{table}
 Prediction for x=0.7: 9.776875346817139
+
 Ci of 95\%for x=0.9: (9.502410532700683, 10.051340160933595)
 $$y=0.18958328x +9.644167050817138$$
-This model it has to be taken with careful due is a colinear model that has a several brands of cars. At also, the slopes are 
-$$slopes=0.18958328,0.50766223 ,-1.26198477, -0.99000114 ,-0.92894517, -0.6305545,
-1.16321074, -0.68259389,  1.23056047 , 0.09693613, -0.91120827, -0.65395334,
+The best parameters for Knn obtained were with Hamming distance with 5 neighbors and the weight was according to the distance
+
+This model it has to be taken with careful due to is a colinear model that has a several brands of cars. At also, the slopes are
+
+
+slopes=0.18958328,0.50766223 ,-1.26198477, -0.99000114 ,-0.92894517, -0.6305545,
+1.16321074, -0.68259389,  1.23056047 , 0.09693613, -0.91120827, -0.65395334
 -0.00913223, -0.95232464 , 0.75358479, -0.68607991,  0.0266443,  -0.99147226,
--0.65961111, -0.6527091 ,  0.27815024$$
+-0.65961111, -0.6527091 ,  0.27815024
+
+
 The way that it has been chosen the categorical variable of Make than the other variables, it is because they were tested with ANOVA, and the statistical significance
 \begin{table}[h]
   \centering
@@ -725,11 +786,14 @@ Now in terms of MSE and RMSE the third model had a lowest MSE and RMSE but the f
 Always in Data science it can be created different models to represent different phenoms or different aims. In this case, we have seen that despite that the fourth model doesn't have the best MSE and RMSE from all models however it is no the worst, the percentage of describing data is the highest so if we have this model with just this two variables and type of regressor, it can choose the fourth model. However the best thing that it can be done on this dataset could it be use different models or different treatments on the distribution
 \subsection{Second data-set}
 In base on the related works, \citep{article_1012052} used a similar approach in the creation of the model and also at the prediction of price of cars. And here it found that the cars with a certain make have more influence in a price than cars with a unknown brand. And \citep{WOS:000927105100001} the way to describe different features that can lead to different prices of car int the Van regions had a similarity workflow than this work. As also they used similar metrics. And \citep{WEBER2019109} they found how the fuel consumption has a huge weight into the prices of cars. As also the make is other important factor to see.
-In the last analysis, it could have seen that the main features had a strong relation were those related with the motor and the structure of the car. And also the efficiency of the combustion of fuel. In the case of categorical variables, the variable that had a better resolution in predictions was the make, so here it can be refuted the past works. To indicate the best model in terms of the car's infrastructure; could be the curb weight because it had a $r^2$ of 75\% and its Knn model has  similar approach. Also its MSE and RMSE despite that is not the best of all, it is second model that has a good resolution on MSE and RMSE. 
+In the last analysis, it could have seen that the main features had a strong relation were those related with the motor and the structure of the car. And also the efficiency of the combustion of fuel. In the case of categorical variables, the variable that had a better resolution in predictions was the make, so here it can be refuted the past works. To indicate the best model in terms of the car's infrastructure; could be the curb weight because it had a $R^2$ of 75\% and its Knn model has  similar approach,. Also its MSE and RMSE despite that is not the best of all, it is second model that has a good resolution on MSE and RMSE with values of 0.0121 and 0.109 respectively.
+however, if it can be checked with the last tables,the engine size appear to be the most relevant when it is applied a knn model with 78.149\% as $R^2$ and with the lowest MSE and RMSE of 0.00820 and 0.0907.
+So, as a linear regressor model the variable Curb weight is the best one, however, as the variable with the highest efficiency it is engine size, so this variable is the most significant 
+
 These variables which are related with the structure of the car, tend to follow the mark and the prices respect to the mark has a similar approach. So it can be deduce that relevant and expensive cars would try to make their cars as better as possible, such in the efficiency of consumption of fuel or the curb weight, horse power. Meanwhile those brands that has a cheaper cost don't tend to have the better structure features.(figure\ref{fig:t},\ref{fig:t2},\ref{fig:t3})  
 \section{Conclusions and future work}
-In both datasets can be used other type of models and see its efficiency in the prediction, as also it could be useful try to use regressions that are more associated with exponential distributions. In the second part it could aim to see the colineality and compare the $r^2$ obtained in the last models respect to the colinear model.
-To make a good analysis it can be challenging because several variables could be related among them, but when it makes an analysis the best way to know if it is following the correct path is looking for related works and its results, with this as priority it could be good help to delimitate the variables to use. Also, the dataset 2 shows how tendencies works on and it is important to look out at them.
+In both datasets can be used other type of models and see its efficiency in the prediction, as also it could be useful try to use regressions that are more associated with exponential distributions. In the second part it could aim to see the colineality and compare the $R^2$ obtained in the last models respect to the colinear model. And also, the way that was cleaned the dataset could it be changed or taking other parameters in the Knn model. 
+To make a good analysis it can be challenging because several variables could be related among them, but when it makes an analysis the best way to know if it is following the correct path is looking for related works and its results, with this as priority it could be good help to delimitate the variables to use as the models or the cleaning process.
 \bibliographystyle{apalike}
 \bibliography{references}
 

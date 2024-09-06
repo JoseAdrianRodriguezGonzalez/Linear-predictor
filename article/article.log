@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.29)  5 SEP 2024 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.29)  5 SEP 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -642,7 +642,11 @@ dftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box69
-) (article.aux)
+) (article.aux
+
+LaTeX Warning: Label `fig:example_intervals' multiply defined.
+
+)
 \openout1 = `article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -702,325 +706,422 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 (C:\Users\USUARIO\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\OT1/cmr/m/n/10 Consumers'
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/cmr/m/n/10 pref-er-ences on
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 38--38
+Underfull \hbox (badness 7030) in paragraph at lines 39--39
 \OT1/cmr/m/n/10 the Swiss car
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/cmr/m/n/10 mar-ket: A
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 38--38
+Underfull \hbox (badness 1881) in paragraph at lines 39--39
 []|\OT1/cmr/m/n/10 hedonic pric-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/cmr/m/n/10 ap-proach and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\OT1/cmr/m/n/10 Were ob-tained
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/cmr/m/n/10 on the auto-
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 []|\OT1/cmr/m/n/10 How lastly the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 \OT1/cmr/m/n/10 cos-tumers have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 \OT1/cmr/m/n/10 been pre-ferred
  []
 
 
-Underfull \hbox (badness 4765) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 heav-ier de-spite
+Underfull \hbox (badness 3078) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 lighter cars than
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 the in-creas-ing
+Underfull \hbox (badness 3108) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 in-creas-ing of the
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 of the weight
+Underfull \hbox (badness 7540) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 weight cars and
  []
 
 
-Underfull \hbox (badness 6332) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 fac-tor for the
+Underfull \hbox (badness 1675) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 the cos-tumer the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 cos-tumer the
+Underfull \hbox (badness 4291) in paragraph at lines 39--40
+\OT1/cmr/m/n/10 ef-fi-ciency on the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-\OT1/cmr/m/n/10 fuel con-sump-
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 40--40
+Underfull \hbox (badness 3058) in paragraph at lines 41--41
 []|[]\OT1/cmr/m/n/10 Ikinci El Oto-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 mo-bil Fiyat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Art^^P^^Xs^^Pna
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Etki Eden
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Fakt^^?orlerin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Yap^^Psal E^^Xsitlik
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Mod-eli ile
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 De-ter-mi-na-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 of the Fac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 tors Af-fect-ing
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 40--40
+Underfull \hbox (badness 5908) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 the Used Car
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Price In-crease
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 40--40
+Underfull \hbox (badness 6775) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 tural Equa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Model: The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 Case of Van
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 40--40
+Underfull \hbox (badness 7203) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 tured equa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []|\OT1/cmr/m/n/10 Were ob-tained
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 40--40
+Underfull \hbox (badness 1348) in paragraph at lines 41--41
 \OT1/cmr/m/n/10 due to sur-veys
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-[]|\OT1/cmr/m/n/10 It has been
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 how the sev-eral
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 found how the
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 fea-tures as eco-
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 sev-eral fea-tures
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 as eco-nomics,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 mar-ket-ing,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/cmr/m/n/10 strate-gies and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/cmr/m/n/10 sup-ply-ing are
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/cmr/m/n/10 cor-re-lated with
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/cmr/m/n/10 the amount of
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/cmr/m/n/10 prices, how-ever
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 the eco-nomics
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 are is stronger
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\OT1/cmr/m/n/10 against the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10 More Sus-tain-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10 able? Price
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/cmr/m/n/10 Pre-dic-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\OT1/cmr/m/n/10 Linear re-gres-
  []
 
 
-Underfull \hbox (badness 3657) in paragraph at lines 42--43
-[]|\OT1/cmr/m/n/10 The lin-ear re-
+Underfull \hbox (badness 2277) in paragraph at lines 43--44
+\OT1/cmr/m/n/10 to find out that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 gres-sion has
- []
-
-
-Underfull \hbox (badness 3623) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 shown ef-fec-tive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 find out that
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 the make of a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 trans-mis-sion
- []
-
-
-Underfull \hbox (badness 6332) in paragraph at lines 42--43
-\OT1/cmr/m/n/10 ship with the
- []
-
-
-Overfull \hbox (73.05937pt too wide) in paragraph at lines 35--45
+Overfull \hbox (84.4403pt too wide) in paragraph at lines 36--46
  [] 
  []
 
-c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45: I can't write
- on file `article.pdf'.
-(Press Enter to retry, or Control-C to exit; default file extension is `.pdf')
-Please type another file name for output
-c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45: Emergency sto
-p.
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.45 \end{center}
-                 
-*** (job aborted, file error in nonstop mode)
+[1
 
- 
+{C:/Users/USUARIO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \vbox (9.75081pt too high) has occurred while \output is active []
+
+
+[2] [3] [4] [5]
+Overfull \hbox (103.85725pt too wide) in paragraph at lines 232--233
+[][] 
+ []
+
+[6]
+<data1_plot1.png, id=35, 422.7795pt x 426.393pt>
+File: data1_plot1.png Graphic file (type png)
+<use data1_plot1.png>
+Package pdftex.def Info: data1_plot1.png  used on input line 280.
+(pdftex.def)             Requested size: 224.2479pt x 226.16939pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./data1_plot1.png>]
+<model_1.png, id=46, 611.4042pt x 396.0396pt>
+File: model_1.png Graphic file (type png)
+<use model_1.png>
+Package pdftex.def Info: model_1.png  used on input line 320.
+(pdftex.def)             Requested size: 224.2479pt x 145.25726pt.
+<data2_plot.png, id=47, 849.1725pt x 550.055pt>
+File: data2_plot.png Graphic file (type png)
+<use data2_plot.png>
+Package pdftex.def Info: data2_plot.png  used on input line 347.
+(pdftex.def)             Requested size: 224.2479pt x 145.25189pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./model_1.png>]
+<model_2.png, id=52, 857.2025pt x 550.055pt>
+File: model_2.png Graphic file (type png)
+<use model_2.png>
+Package pdftex.def Info: model_2.png  used on input line 375.
+(pdftex.def)             Requested size: 224.2479pt x 143.8922pt.
+ [10 <./data2_plot.png> <./model_2.png>]
+<model_3_3.png, id=56, 858.20625pt x 550.055pt>
+File: model_3_3.png Graphic file (type png)
+<use model_3_3.png>
+Package pdftex.def Info: model_3_3.png  used on input line 404.
+(pdftex.def)             Requested size: 224.2479pt x 143.72433pt.
+ [11 <./model_3_3.png>] [12]
+<heatmap.png, id=68, 895.345pt x 778.91pt>
+File: heatmap.png Graphic file (type png)
+<use heatmap.png>
+Package pdftex.def Info: heatmap.png  used on input line 560.
+(pdftex.def)             Requested size: 379.5021pt x 330.15881pt.
+
+Overfull \hbox (34.5021pt too wide) in paragraph at lines 560--561
+ [] 
+ []
+
+[13]
+<box.png, id=73, 571.13374pt x 414.54875pt>
+File: box.png Graphic file (type png)
+<use box.png>
+Package pdftex.def Info: box.png  used on input line 572.
+(pdftex.def)             Requested size: 172.5pt x 125.20686pt.
+<box2.png, id=74, 549.05125pt x 414.54875pt>
+File: box2.png Graphic file (type png)
+<use box2.png>
+Package pdftex.def Info: box2.png  used on input line 578.
+(pdftex.def)             Requested size: 172.5pt x 130.24196pt.
+ [14 <./heatmap.png>] [15 <./box.png> <./box2.png>]
+Overfull \hbox (21.05652pt too wide) in paragraph at lines 649--651
+\OT1/cmr/m/n/10 Prediction for x=0.9: 0.8331700416235279 Ci of 95%for x=0.9: (0
+.6006405680156519,
+ []
+
+[16]
+Overfull \hbox (24.72316pt too wide) in paragraph at lines 694--698
+[]\OT1/cmr/m/n/10 slopes=0.18958328,0.50766223 ,-1.26198477, -0.99000114 ,-0.92
+894517, -0.6305545,
+ []
+
+
+Overfull \hbox (16.5494pt too wide) in paragraph at lines 705--721
+ [][] 
+ []
+
+<image1.png, id=84, 860.21375pt x 550.055pt>
+File: image1.png Graphic file (type png)
+<use image1.png>
+Package pdftex.def Info: image1.png  used on input line 728.
+(pdftex.def)             Requested size: 103.50105pt x 66.18001pt.
+<image2.png, id=85, 860.21375pt x 550.055pt>
+File: image2.png Graphic file (type png)
+<use image2.png>
+Package pdftex.def Info: image2.png  used on input line 733.
+(pdftex.def)             Requested size: 103.50105pt x 66.18001pt.
+<image3.png, id=86, 869.2475pt x 550.055pt>
+File: image3.png Graphic file (type png)
+<use image3.png>
+Package pdftex.def Info: image3.png  used on input line 738.
+(pdftex.def)             Requested size: 103.50105pt x 65.49176pt.
+<image4.png, id=87, 860.21375pt x 550.055pt>
+File: image4.png Graphic file (type png)
+<use image4.png>
+Package pdftex.def Info: image4.png  used on input line 746.
+(pdftex.def)             Requested size: 103.50105pt x 66.18001pt.
+<image5.png, id=88, 860.21375pt x 550.055pt>
+File: image5.png Graphic file (type png)
+<use image5.png>
+Package pdftex.def Info: image5.png  used on input line 751.
+(pdftex.def)             Requested size: 103.50105pt x 66.18001pt.
+<image6.png, id=89, 860.21375pt x 550.055pt>
+File: image6.png Graphic file (type png)
+<use image6.png>
+Package pdftex.def Info: image6.png  used on input line 756.
+(pdftex.def)             Requested size: 103.50105pt x 66.18001pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+<t1.png, id=93, 862.22125pt x 642.4pt>
+File: t1.png Graphic file (type png)
+<use t1.png>
+Package pdftex.def Info: t1.png  used on input line 765.
+(pdftex.def)             Requested size: 103.50105pt x 77.10428pt.
+<t2.png, id=94, 853.1875pt x 642.4pt>
+File: t2.png Graphic file (type png)
+<use t2.png>
+Package pdftex.def Info: t2.png  used on input line 771.
+(pdftex.def)             Requested size: 103.50105pt x 77.92766pt.
+<t3.png, id=95, 871.255pt x 642.4pt>
+File: t3.png Graphic file (type png)
+<use t3.png>
+Package pdftex.def Info: t3.png  used on input line 777.
+(pdftex.def)             Requested size: 103.50105pt x 76.31029pt.
+ [18 <./image1.png> <./image2.png> <./image3.png> <./image4.png> <./image5.png>
+ <./image6.png>] [19 <./t1.png> <./t2.png> <./t3.png>] (article.bbl)
+[20] (article.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 24972 strings out of 474486
- 654501 string characters out of 5742811
- 1934542 words of memory out of 5000000
- 46871 multiletter control sequences out of 15000+600000
- 565317 words of font info for 65 fonts, out of 8000000 for 9000
+ 25836 strings out of 474486
+ 675277 string characters out of 5742811
+ 1942542 words of memory out of 5000000
+ 47719 multiletter control sequences out of 15000+600000
+ 568776 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,93p,753b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/USUARIO/Desktop/Linear-predictor/article/article.tex:45:  ==> Fatal er
-ror occurred, no output PDF file produced!
+ 84i,20n,93p,753b,2332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\USUARIO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
+rm1000.pk><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/USUARIO/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/USUARIO/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/USUARI
+O/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/U
+sers/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi9.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/USUARIO/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/USUARIO/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/USUARI
+O/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Use
+rs/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy9.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/USUARIO/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on article.pdf (20 pages, 894109 bytes).
+PDF statistics:
+ 191 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+
